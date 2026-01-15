@@ -30,5 +30,6 @@ int sum_dlistint(dlistint_t *head);
 /* ✅ MISSING PROTOTYPE (THIS FIXES THE ERROR) */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h,
 				     unsigned int idx, int n);
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 
 #endif /* LISTS_H */

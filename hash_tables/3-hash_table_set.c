@@ -22,7 +22,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((const unsigned char *)key, ht->size);
 	node = ht->array[index];
 
-	/* Update value if key already exists */
+	/* Check if key already exists and update value */
 	while (node != NULL)
 	{
 		if (strcmp(node->key, key) == 0)
